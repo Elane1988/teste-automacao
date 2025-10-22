@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-10-22T14:27:57.066039" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Site Inicial" source="C:\Users\foliv\OneDrive\Documentos\OneDrive\Área de Trabalho\Automações DR consulta\tests\test_site_inicial.robot">
+<test id="s1-t1" name="CT001 - Verificar página inicial do DrConsulta" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-22T14:27:57.391349" level="INFO">Opening browser 'chrome' to base url 'https://drconsulta.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-22T14:27:57.391035" elapsed="5.837322"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-22T14:28:03.229655" elapsed="0.142207"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2025-10-22T14:28:03.372739" elapsed="1.594795"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-10-22T14:28:04.975055" level="INFO">${title} = dr.consulta: saúde de qualidade é para todos</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-10-22T14:28:04.968068" elapsed="0.007104"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-10-22T14:28:04.976363" level="INFO">O título atual</msg>
+<arg>O título atual</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-10-22T14:28:04.975847" elapsed="0.000710"/>
+</kw>
+<doc>Verifica se a página inicial do site é exibida corretamente</doc>
+<status status="PASS" start="2025-10-22T14:27:57.388991" elapsed="7.588214"/>
+</test>
+<status status="PASS" start="2025-10-22T14:27:57.067795" elapsed="7.910780"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Site Inicial" id="s1" pass="1" fail="0" skip="0">Test Site Inicial</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
